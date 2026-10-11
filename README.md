@@ -10,6 +10,20 @@ Design de origem: Figma Make (`Figma Make Projects/Chatbot Platform for WhatsApp
 - **Documentação:** [`Documents/`](Documents/README.md) (abra `Documents/visualizar.html`) · **Testes:** [`Testes/`](Testes/README.md)
 - **Ativar o WhatsApp real e a IA:** [`Documents/02-whatsapp-e-ia.md`](Documents/02-whatsapp-e-ia.md)
 
+## Telas
+
+**Site da Nuvio**
+
+<img src="Documents/telas/01-inicio.jpg" alt="Site da Nuvio" width="100%">
+
+**Painel da empresa (demonstração)**
+
+<img src="Documents/telas/02-painel.jpg" alt="Painel da empresa (demonstração)" width="100%">
+
+**Conversas atendidas pela IA**
+
+<img src="Documents/telas/03-conversas.jpg" alt="Conversas atendidas pela IA" width="100%">
+
 ## Rodando
 
 ```bash
