@@ -1,0 +1,11 @@
+Execução: 10/10/2026 22:00 · servidor local com banco local (DATA_STORE=file, mesmas regras do Firestore), sem chaves da Meta
+
+✅ API-01 visitante vê só os planos — 3 planos; nenhuma empresa, usuário, conversa ou fatura
+✅ API-02 login: senha errada recusada; sessão HttpOnly — 401 com senha errada; cookie HttpOnly + SameSite=Lax
+✅ API-03 cada empresa vê só os próprios dados; ninguém recebe hash — Lumina: 12 conversas, 8 conteúdos; Aurora não vê nada da Lumina
+✅ API-04 backoffice vê empresas e faturas, mas não as conversas dos clientes finais — 13 empresas; 0 conversas (privacidade); sem hash
+✅ API-05 ações em dados de outra empresa ou fora do perfil são recusadas — 8 tentativas recusadas (422); sem login 401; ação inexistente 400
+✅ API-06 CSRF: alterações só a partir do próprio site — sem origem 403; outro site 403
+✅ API-07 simular mensagens só em conversas de demonstração; integrações sem chaves ficam fechadas — sem chaves da Meta: conexão real e webhook respondem 404
+
+Resultado: 7/7 verificações aprovadas

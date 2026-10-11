@@ -1,0 +1,63 @@
+Execução: 10/10/2026 22:00 · servidor local com banco local (DATA_STORE=file, mesmas regras do Firestore), sem chaves da Meta
+Computador (1366×900):
+✅ [public] /
+✅ [public] /comecar
+✅ [public] /entrar
+✅ [public] /privacidade
+✅ [public] /termos
+✅ [client] /painel
+✅ [client] /painel/conversas
+✅ [client] /painel/conversas?c=c-lumina-2
+✅ [client] /painel/chatbot
+✅ [client] /painel/conhecimento
+✅ [client] /painel/integracoes
+✅ [client] /painel/plano
+✅ [admin] /admin
+✅ [admin] /admin/clientes
+✅ [admin] /admin/assinaturas
+✅ [admin] /admin/operacao
+✅ [admin] /admin/configuracoes
+
+Todas as páginas sem erro
+
+Celular (375×812):
+✅ [public] /
+✅ [public] /comecar
+✅ [public] /entrar
+✅ [public] /privacidade
+✅ [public] /termos
+✅ [client] /painel
+✅ [client] /painel/conversas
+✅ [client] /painel/conversas?c=c-lumina-2
+✅ [client] /painel/chatbot
+✅ [client] /painel/conhecimento
+✅ [client] /painel/integracoes
+✅ [client] /painel/plano
+✅ [admin] /admin
+✅ [admin] /admin/clientes
+✅ [admin] /admin/assinaturas
+✅ [admin] /admin/operacao
+✅ [admin] /admin/configuracoes
+
+Todas as páginas sem erro
+
+Computador, com as chaves da Meta configuradas (simulador) — depois da correção da página Integrações:
+✅ [public] /
+✅ [public] /comecar
+✅ [public] /entrar
+✅ [public] /privacidade
+✅ [public] /termos
+✅ [client] /painel
+✅ [client] /painel/conversas
+✅ [client] /painel/conversas?c=c-lumina-2
+✅ [client] /painel/chatbot
+✅ [client] /painel/conhecimento
+✅ [client] /painel/integracoes
+✅ [client] /painel/plano
+✅ [admin] /admin
+✅ [admin] /admin/clientes
+✅ [admin] /admin/assinaturas
+✅ [admin] /admin/operacao
+✅ [admin] /admin/configuracoes
+
+Todas as páginas sem erro

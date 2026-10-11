@@ -1,0 +1,39 @@
+Execução: 10/10/2026 21:59 · servidor local com banco local (DATA_STORE=file, mesmas regras do Firestore)
+
+
+ RUN  v5.0.3 C:/Users/andre/Desktop/Claude Development Team/Claude Projects/Chatbot Platform for WhatsApp
+
+ ✓ tests/unit/platform.test.ts > UT-01 entendimento das perguntas > normaliza acentos, ignora palavras vazias e une sinônimos 3ms
+ ✓ tests/unit/platform.test.ts > UT-01 entendimento das perguntas > classifica o assunto da conversa 0ms
+ ✓ tests/unit/platform.test.ts > UT-01 entendimento das perguntas > encontra a resposta certa na base, inclusive dentro de textos longos 27ms
+ ✓ tests/unit/platform.test.ts > UT-01 entendimento das perguntas > não usa conteúdo desativado ou ainda em leitura 5ms
+ ✓ tests/unit/platform.test.ts > UT-02 regras do assistente > responde pela base com o tom escolhido e cita a fonte 5ms
+ ✓ tests/unit/platform.test.ts > UT-02 regras do assistente > cumprimenta pelo nome 5ms
+ ✓ tests/unit/platform.test.ts > UT-02 regras do assistente > transfere quando o cliente pede atendente — ou avisa o horário fora do expediente 5ms
+ ✓ tests/unit/platform.test.ts > UT-02 regras do assistente > depois de N respostas sem informação, transfere para a equipe 5ms
+ ✓ tests/unit/platform.test.ts > UT-03 conversas e atendimento humano > conversa simulada: a IA responde, conta no uso do dia e a equipe assume, responde, devolve e encerra 21ms
+ ✓ tests/unit/platform.test.ts > UT-03 conversas e atendimento humano > pedido de atendente coloca a conversa em espera para a equipe 11ms
+ ✓ tests/unit/platform.test.ts > UT-04 base, integrações, cobrança e backoffice > valida conteúdos e respeita o limite do plano 13ms
+ ✓ tests/unit/platform.test.ts > UT-04 base, integrações, cobrança e backoffice > conecta o WhatsApp em duas etapas 12ms
+ ✓ tests/unit/platform.test.ts > UT-04 base, integrações, cobrança e backoffice > fatura vencida deixa a conta com pagamento pendente; pagar regulariza 15ms
+ ✓ tests/unit/platform.test.ts > UT-04 base, integrações, cobrança e backoffice > cadastro cria empresa em teste grátis; backoffice exige perfil admin 21ms
+ ✓ tests/unit/platform.test.ts > UT-04 base, integrações, cobrança e backoffice > demonstração: a Lumina tem conversas montadas pelo próprio motor do robô 6ms
+ ✓ tests/unit/server.test.ts > UT-05 webhook do WhatsApp > lê texto, botões e mídia; ignora reações 3ms
+ ✓ tests/unit/server.test.ts > UT-05 webhook do WhatsApp > lê status de entrega e erros 0ms
+ ✓ tests/unit/server.test.ts > UT-05 webhook do WhatsApp > assinatura X-Hub-Signature-256 confere com o segredo do app 1ms
+ ✓ tests/unit/server.test.ts > UT-06 conversas reais > mensagem nova abre conversa; repetida é ignorada; mesma pessoa continua na mesma conversa 39ms
+ ✓ tests/unit/server.test.ts > UT-06 conversas reais > status de entrega só avança; falha registra o motivo 13ms
+ ✓ tests/unit/server.test.ts > UT-06 conversas reais > regra das 24 h e limite do plano 17ms
+ ✓ tests/unit/server.test.ts > UT-06 conversas reais > no servidor, a resposta vem depois (sem resposta automática) 10ms
+ ✓ tests/unit/server.test.ts > UT-07 IA (Claude) > instruções levam só a base ATIVA e as regras de segurança 5ms
+ ✓ tests/unit/server.test.ts > UT-07 IA (Claude) > histórico: começa pelo cliente, junta mensagens seguidas e ignora avisos do sistema 0ms
+ ✓ tests/unit/server.test.ts > UT-07 IA (Claude) > confere a resposta da IA: ação válida, texto e fontes que existem 6ms
+ ✓ tests/unit/server.test.ts > UT-08 acesso e gravação no servidor > cada perfil recebe só o que pode 5ms
+ ✓ tests/unit/server.test.ts > UT-08 acesso e gravação no servidor > recusa ações em outra empresa 13ms
+ ✓ tests/unit/server.test.ts > UT-08 acesso e gravação no servidor > grava só o que mudou; token cifrado não é legível 14ms
+
+ Test Files  2 passed (2)
+      Tests  28 passed (28)
+   Start at  21:59:13
+   Duration  884ms (import 49%, tests 28%, transform 22%, worker 1%)
+

@@ -1,0 +1,8 @@
+# Netlify detecta o Next.js automaticamente e aplica o adaptador oficial
+# (@netlify/plugin-nextjs). Este arquivo só fixa o build e a versão do Node.
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"

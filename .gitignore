@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+.netlify/
+.data/
+*.tsbuildinfo
+next-env.d.ts
+.env
+.env.local
+.env.*.local
+
+# Chave secreta do Firebase (Admin SDK) — nunca versionar nem publicar
+firebase-service-account.json
+*-firebase-adminsdk-*.json
+.env.netlify

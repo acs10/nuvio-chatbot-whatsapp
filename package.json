@@ -1,0 +1,45 @@
+{
+  "name": "nuvio-chatbot-whatsapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:smoke": "node tests/e2e/smoke.mjs",
+    "test:flows": "node tests/e2e/flows.mjs",
+    "db:setup": "tsx --conditions=react-server scripts/db-setup.mts",
+    "test:api": "node tests/e2e/api-security.mjs",
+    "test:whatsapp": "node tests/e2e/whatsapp.mjs",
+    "docs": "node tools/build-docs.mjs",
+    "deploy": "node scripts/deploy.mjs",
+    "env:push": "node scripts/push-env.mjs"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.1",
+    "firebase-admin": "^14.5.0",
+    "mobx": "^7.0.6",
+    "mobx-react-lite": "^5.1.0",
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "server-only": "^0.0.1",
+    "sonner": "^2.0.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "puppeteer-core": "^23.11.1",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
+  }
+}

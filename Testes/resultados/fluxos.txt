@@ -1,0 +1,13 @@
+Execução: 10/10/2026 22:00 · servidor local com banco local (DATA_STORE=file, mesmas regras do Firestore), sem chaves da Meta
+
+✅ F-01 cadastro em 4 etapas cria a empresa em teste grátis — Padaria Pão Quente · Essencial · teste grátis · aviso para conectar o WhatsApp
+✅ F-02 base de conhecimento: adiciona pergunta e texto — 2 conteúdos ativos
+✅ F-03 testar assistente: responde pela base e transfere quando pedem atendente — entrega (FAQ), bolo (texto) e transferência
+✅ F-04 configurar assistente: valida e salva — mensagem curta recusada; nova saudação salva
+✅ F-05 conversa: IA responde, equipe assume, responde e encerra — IA → humano → encerrada
+✅ F-06 integrações: conecta o WhatsApp em 2 etapas — +55 63 98765-4321 conectado
+✅ F-07 cobrança: cadastra cartão, ativa assinatura e muda de plano — cartão final 4242 · ativa · Profissional
+✅ F-08 backoffice: encontra o novo cliente e suspende; cliente suspenso não entra — suspensa pelo backoffice; login recusado
+✅ F-09 site: “Ver demonstração” abre o painel da Clínica Lumina — painel de demonstração
+
+Resultado: 9/9 fluxos aprovados

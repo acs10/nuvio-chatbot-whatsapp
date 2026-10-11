@@ -1,0 +1,8 @@
+Execução: 10/10/2026 22:08 · node tests/e2e/docs-check.mjs (link secreto local)
+
+✅ Documents/02-whatsapp-e-ia.md: 1/1 diagramas
+✅ Documents/03-arquitetura-e-seguranca.md: 1/1 diagramas
+✅ Documents/04-modelo-de-dados.md: 2/2 diagramas
+✅ Testes/README.md: 1/1 diagramas
+
+18 documentos · 5 diagramas desenhados · 0 com problema

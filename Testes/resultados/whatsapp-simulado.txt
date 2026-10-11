@@ -1,0 +1,15 @@
+Execução: 10/10/2026 22:03 · node tests/e2e/whatsapp.mjs http://localhost:3016
+(site com META_APP_SECRET, WHATSAPP_VERIFY_TOKEN e META_GRAPH_BASE apontando para o simulador local da Graph API · banco local)
+
+✅ WA-01 verificação do webhook (GET hub.challenge) — token errado 403; certo devolve o challenge
+✅ WA-02 conexão manual: token validado na 'Meta' e guardado cifrado — +55 63 99999-0000 · Clínica Lumina (teste) · token não aparece no navegador
+✅ WA-03 webhook sem assinatura ou com assinatura errada é recusado — sem assinatura 401; assinatura errada 401; nada gravado
+✅ WA-04 mensagem real: conversa nova, IA responde e envia pela API — resposta "Claro! A avaliação inicial custa R$ 120 e esse val…" enviada (wamid.TESTE1)
+✅ WA-05 notificação repetida não duplica (mesmo wamid) — 1 mensagem, 1 envio
+✅ WA-06 status de entrega: entregue e lida (nunca volta para trás) — sent → delivered → read (fora de ordem ignorado)
+✅ WA-07 cliente pede atendente: transferência; equipe responde pela API — transferida; equipe assumiu e a resposta foi enviada
+✅ WA-08 falha da Meta (fora das 24 h) aparece na mensagem e no painel — “Mais de 24 h desde a última mensagem do cliente: só é possível enviar um modelo aprovado.”
+✅ WA-09 mídia e números desconhecidos — áudio vira aviso para a equipe; número de outra conta é ignorado
+✅ WA-10 desconectar apaga o token — desconectado; mensagens novas não são enviadas
+
+Resultado: 10/10 verificações do WhatsApp aprovadas
